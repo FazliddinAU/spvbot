@@ -1,0 +1,19 @@
+{
+  "name": "savdotezbot",
+  "version": "1.0.0",
+  "description": "telegram stars va premium savdo. Vertual raqamlar telegram uchun",
+  "license": "ISC",
+  "author": "fazliddinau",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "pg": "^8.16.3"
+  }
+}
