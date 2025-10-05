@@ -327,7 +327,7 @@ bot.on('callback_query', async (query) => {
                         [{ text: "🎁🌹 25 stars", callback_data: '100stars' }],
                         [{ text: "💐🚀 50 stars", callback_data: '150stars' }],
                         [{ text: "💎💍 100 stars", callback_data: '200stars' }],
-                        [{text : "🌸 NFT 🌿", url : "tg://user?id=${admin}"}]
+                        [{text : "🌸 NFT 🌿", url : `tg://user?id=${admin}`}]
                     ]
                 }
             });
