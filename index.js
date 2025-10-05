@@ -35,10 +35,10 @@ const products = {
     '100stars': { title: "🎁🌹 25 stars", price: 8000 },
     '150stars': { title: "💐🚀 50 stars", price: 13000 },
     '200stars': { title: "💎💍 100 stars", price: 24000 },
-    '3premium': { title: "🎁3 oylik premium", price: 190000 },
-    '6premium': { title: "🎁6 oylik premium", price: 260000 },
-    '12premium': { title: "🎁12 oylik premium", price: 455000 },
-    'account': { title: "📱Telegram hisob", price: 15000 }
+    '3premium': { title: "🎁3 oylik premium", price: 193000 },
+    '6premium': { title: "🎁6 oylik premium", price: 263000 },
+    '12premium': { title: "🎁12 oylik premium", price: 458000 },
+    'account': { title: "📱Telegram hisob", price: 18000 }
 };
 bot.on('message', async (message) => {
     const chatId = message.chat.id;
@@ -327,7 +327,7 @@ bot.on('callback_query', async (query) => {
                         [{ text: "🎁🌹 25 stars", callback_data: '100stars' }],
                         [{ text: "💐🚀 50 stars", callback_data: '150stars' }],
                         [{ text: "💎💍 100 stars", callback_data: '200stars' }],
-                        [{text : "🌸 NFT 🌿", url : "https://t.me/inqiIob"}]
+                        [{text : "🌸 NFT 🌿", url : "tg://user?id=${admin}"}]
                     ]
                 }
             });
@@ -355,14 +355,14 @@ bot.on('callback_query', async (query) => {
                 parse_mode: 'HTML',
                 reply_markup: {
                     inline_keyboard: [
-                        [{ text: `Telegram hisob - 15 000 so'm`, callback_data: 'account' }]
+                        [{ text: `Telegram hisob - 18 000 so'm`, callback_data: 'account' }]
                     ]
                 }
             });
         }
 
         else if (data === 'payment') {
-            await bot.sendMessage(chatId, `💳 To'lovni amalga oshirish uchun quyidagi karta raqamiga o’tkazma qiling:\n\n<code>9860 1201 6718 6416</code>\n\nMinimal to'lov miqdori: 1000 so'm\n\nIltimos, qancha to'lov qilmoqchi ekanligingizni raqamda kiriting:`, {
+            await bot.sendMessage(chatId, `💳 To'lovni amalga oshirish uchun quyidagi karta raqamiga o’tkazma qiling:\n\n<code>9860 0201 4082 4523</code>\n\nMinimal to'lov miqdori: 1000 so'm\n\nIltimos, qancha to'lov qilmoqchi ekanligingizni raqamda kiriting:`, {
                 parse_mode: 'HTML'
             });
             userStates.set(chatId, 'awaiting_payment_amount');
